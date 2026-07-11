@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaboration Layer for Democratizing Artificial Intelligence</title>
+  <meta name="description" content="A lightweight collaboration layer that sits between the human and the expanding ecosystem of AI agents — and Coco, an open-source proactive co-assistant.">
+  <meta property="og:title" content="Collaboration Layer for Democratizing Artificial Intelligence">
+  <meta property="og:description" content="The next frontier is not building more agents, but building a collaboration layer between humans and the AI agents they work with.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/collaboration-layer.svg">
+  <link rel="icon" type="image/png" href="assets/pet.png">
+  <link rel="apple-touch-icon" href="assets/pet.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== Full-screen Hero ==================== -->
+  <header class="hero" id="top">
+    <!-- TODO: add the hero background video, e.g.:
+         <video class="hero-video" autoplay loop muted playsinline poster="assets/hero-poster.jpg">
+           <source src="assets/hero.webm" type="video/webm">
+         </video>
+         Until then the deep-blue gradient below serves as the backdrop. -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Research Blog · July 2026</div>
+      <h1>Collaboration Layer for Democratizing Artificial&nbsp;Intelligence</h1>
+      <p class="hero-subtitle">
+        The next frontier is not building more agents, but building a collaboration layer between humans and the AI agents they work with.
+      </p>
+
+      <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://github.com/collaborative-agents/coco" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        Coco
+      </a>
+      <a class="btn btn-secondary" href="#contact">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h12a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5Zm.5 1.4 5.5 4.1 5.5-4.1" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Contact
+      </a>
+      </div>
+    </div>
+    <a class="scroll-indicator" href="#overview" aria-label="Scroll to content">
+      <span>Scroll</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 5.5 8 11l5.5-5.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <!-- ==================== Overview ==================== -->
+  <section id="overview">
+    <div class="container">
+      <h1 class="post-title">Collaboration Layer for Democratizing Artificial Intelligence</h1>
+      <p class="post-author">Yijia Shao · July 2026</p>
+      <p>
+        For most of computing history, the relationship between humans and machines was unambiguous:
+        the human decided, and the computer executed. Yet people have long envisioned computers not as
+        mere tools but as genuine counterparts, &ldquo;serving not just secretaries, but cooperative partners
+        and coaches&rdquo; (<a href="https://www.sciencedirect.com/science/article/pii/S1071581996900737" target="_blank" rel="noopener">Nass, Fogg &amp; Moon, 1996</a>).
+        That vision, articulated thirty years ago, becomes more tangible today: recent advances in large
+        language models have produced systems trained on more text than any human could read in a
+        lifetime, and AI agents that now match or exceed human experts in certain domains.
+      </p>
+      <p>
+        This shift in what machines <em>can do</em> demands a corresponding shift in how we design systems
+        for humans and AI to <em>work together</em>. Over the past few years, models have been trained to
+        better align with human preferences (<a href="https://arxiv.org/abs/2203.02155" target="_blank" rel="noopener">Ouyang et al., 2022</a>)
+        and to sustain coherent multi-turn interactions
+        (<a href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank" rel="noopener">TML interaction models</a>),
+        making collaboration feel meaningfully smoother. Yet this progress, while substantial, leaves the
+        deeper problem untouched. <strong>Efficiency — helping people complete tasks faster — is not the ceiling worth aiming for.
+          The deeper aspiration is growth: helping people achieve what they did not know they could attempt.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Pain Points ==================== -->
+  <section id="pain-points">
+    <div class="container">
+      <h2>Pain Points With AI Agents Today</h2>
+      <p>
+        Despite rapid advances in model capability, working effectively with AI agents remains harder
+        than it should be. Over the last two years, we have observed the following recurring pain points
+        in our own research and beyond.
+      </p>
+      <ul class="pain-list">
+        <li>
+          <strong>AI support is siloed within apps, blind to the broader context of a user's work.</strong>
+            Today's AI agents are largely app-bound, confined to a browser page, a mailbox, or a specific
+            folder. As tasks grow more complex and span multiple tools, the user is left manually bridging
+            the context gap: re-explaining background, reconstructing history, and stitching together
+            outputs that no single agent ever sees in full
+            (<a href="https://dl.acm.org/doi/full/10.1145/3544548.3581388" target="_blank" rel="noopener">Zamfirescu-Pereira et al., 2023</a>).
+        </li>
+        <li>
+          <strong>Collaboration outcomes depend heavily on the human, not just the agent.</strong>
+            In a study evaluating human-agent collaboration across various real-world occupations, when we
+            decouple human and agent CollabSkill, we find that variance across humans is significantly
+            larger than variance across agents. Users in the top 25% of CollabSkill see human-agent
+            collaboration outperform solo agents in 74% of cases; for those in the bottom 25%, the win
+            rate is only 27%
+            (<a href="https://arxiv.org/abs/2606.09833" target="_blank" rel="noopener">Shao et al., 2026</a>).
+        </li>
+        <li>
+          <strong>Users are caught between over-delegating and under-delegating.</strong>
+            In practice, people tend to either hand off entire tasks and accept results without
+            verification, or confine agents to line-level operations and continue driving the substantive
+            work themselves
+            (<a href="https://arxiv.org/abs/2604.15597" target="_blank" rel="noopener">Laban et al., 2026</a>).
+            Choosing well requires knowing what each agent can complete reliably, when its outputs need
+            scrutiny, and whether a request is too underspecified to act on
+            (<a href="https://arxiv.org/abs/2401.15356" target="_blank" rel="noopener">Guo et al., 2024</a>)
+            — a calibration that is hard to achieve, especially when collaborating with an agent on a task
+            that is new to them.
+        </li>
+        <li>
+          <strong>Many people simply don't know what AI can help them with.</strong>
+            When Open Claw went viral earlier this year, the
+            <a href="https://reddit.com/r/LocalLLM/comments/1qp0jhl/i_used_clawdbot_now_moltbot_and_here_are_some/" target="_blank" rel="noopener">top comment</a>
+            on a community thread read plainly: <em>&ldquo;My biggest issue is idk what to really use it
+            for.&rdquo;</em> Our own observations echo this. In May 2026, we ran a
+            <a href="https://www.youtube.com/live/klL5ev8OPzk?si=9K94aJ8dFooPaZDa" target="_blank" rel="noopener">live stream</a>
+            teaching people how to use AI agents and offered Claude Pro subscriptions to participants who
+            stayed. When we followed up a month later, a recurring theme was that people had used AI far
+            less than they expected, and narrowly.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== Collaboration Layer ==================== -->
+  <section id="collaboration-layer">
+    <div class="container">
+      <h2>A Lightweight Collaboration Layer</h2>
+      <p>
+        What would it take to bridge that gap systematically? We argue that the next frontier is not
+        building more agents, but building a <em>collaboration layer</em> — a lightweight coordination
+        substrate that sits between the human and the expanding ecosystem of AI agents they might work with.
+      </p>
+    </div>
+    <div class="container-wide">
+      <figure class="borderless">
+        <img src="assets/collaboration-layer.svg" alt="Diagram of the collaboration layer sitting between the user's workspace and the ecosystem of AI agents">
+        <figcaption>
+          The collaboration layer bridges the user's workspace and existing AI tools, democratizing AI to empower people across domains and skill levels through proactive support, context understanding, smart orchestration, and managing memory and preferences.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="container">
+      <p>
+        By sitting between the user's workspace and existing AI tools, the collaboration layer ingests
+        signals from a broader stream of the user's work and activity over time. From these signals, it
+        builds a unified understanding of what the user is trying to achieve, and that understanding
+        drives four core capabilities: <em>proactive support</em>, which anticipates needs and surfaces
+        suggestions before the user has to ask; <em>context understanding</em>, which unifies signals
+        across apps, tasks, and time into a coherent picture of intent; <em>smart orchestration</em>,
+        which selects the right downstream agent, scopes the work appropriately, or nudges the user to
+        work on certain parts themselves; and <em>memory and preferences</em>, which maintains a
+        persistent, personalized model of how a particular user works. The collaboration layer is deliberately decoupled from heavy execution workload to ensure it can
+        be adaptive, lightweight, and private.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Coco ==================== -->
+  <section id="coco">
+    <div class="container">
+      <h2>Coco: A First Step</h2>
+      <p>
+        As a first step toward this vision, we introduce
+        <a href="https://github.com/collaborative-agents/coco" target="_blank" rel="noopener"><strong>Coco</strong></a>
+        (Proactive Co-Assistant Through Continuous Context
+        Observation), an open-source desktop application that focuses on the proactive
+        support component of the collaboration layer. Coco quietly observes the user's computer-use
+        context — browsing, reading, and editing activity across applications — and steps in with targeted
+        assistance at the right moment: a ready-to-send prompt when it detects repetitive work, a
+        synthesized summary inferred from browsing intent, or concrete questions to help a user navigate
+        unfamiliar territory.
+      </p>
+      <p>
+        It runs fully on the user's machine with no telemetry or cloud storage of personal data,
+        demonstrating that meaningful proactive assistance does not require sacrificing privacy. Coco does
+        not execute tasks itself, but bridges the gap between a user's unspoken needs and the agents best
+        positioned to address them.
+      </p>
+    </div>
+    <div class="container-wide">
+      <figure class="borderless">
+        <img src="assets/coco-overview.svg" alt="Overview of Coco: continuous context observation driving proactive assistance">
+        <figcaption>
+          Coco implements the Computer Use Behavior Observation Protocol, which specifies how behavioral signals from the user's desktop are captured, classified, and forwarded to downstream agents.
+          It uses a VLM to decide when to offer proactive suggestions. 
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ==================== Scaffolding ==================== -->
+  <section id="scaffolding">
+    <div class="container">
+      <h2>Scaffolding Humans to Move Up the Stack</h2>
+      <p>
+        As AI agents grow more capable, a narrow focus on existing tasks and efficiency risks making
+        humans feel increasingly peripheral. But if we believe AI is as transformative as the invention of
+        the computer, the right measure of success is not only how much work agents can do for people, but
+        also how much more people can do because of them. Agents with broad knowledge and general
+        reasoning ability are uniquely positioned to help people venture beyond their current
+        competencies: to attempt problems they have never framed, acquire skills they never imagined, and
+        explore fields adjacent to their own. Realizing this potential, however, requires scaffolding that
+        actively draws people into new territory rather than simply completing tasks on their behalf.
+      </p>
+      <p>
+        Every person operates with a horizon of familiar domains and a much larger territory of unknown
+        unknowns. In our earlier work on
+        <a href="https://github.com/stanford-oval/storm" target="_blank" rel="noopener">building deep research agents</a>,
+        we found that one promising direction for scaffolding users into the unknown is to proactively
+        engage them in the agent's work rather than simply presenting search outcomes
+        (<a href="https://arxiv.org/abs/2408.15232" target="_blank" rel="noopener">Jiang et al., 2024</a>).
+        The collaboration layer extends this insight into everyday computer use. For instance, when Coco
+        observes that a user is working on an interdisciplinary project at the intersection of AI and
+        hardware but appears to have limited background in the hardware side, it proactively surfaces key
+        concepts and questions worth exploring.
+      </p>
+    </div>
+    <div class="container-wide">
+      <figure>
+        <img src="assets/teaser_searching_unknown_unknown.webp" alt="Coco proactively surfacing key concepts and questions worth exploring during interdisciplinary work">
+        <figcaption>
+          The user wants to run Nemotron-3-Nano-Omni locally but doesn't know what hardware specs matter. Coco senses the struggle and suggests concrete questions that are at the core of the space.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="container">
+      <p>
+        This also reconnects with an early vision of agents that reduce work and information overload
+        (<a href="https://dl.acm.org/doi/pdf/10.1145/176789.176792" target="_blank" rel="noopener">Maes, 1994</a>).
+        Ironically, as our pain points illustrate, today's AI agents can exacerbate information overload,
+        particularly for non-technical users. The collaboration layer addresses this missing piece of
+        infrastructure. It works toward an AI future in which the benefits of capable AI systems are not
+        gated on technical sophistication or any particular agent provider — one in which the relationship
+        between humans and their AI tools is genuinely collaborative rather than merely convenient.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Limitations ==================== -->
+  <section id="limitations">
+    <div class="container">
+      <h2>Limitations and What We Are Working On</h2>
+      <p>
+        In this piece, we introduce a vision for a collaboration layer that sits between the user's
+        workspace and the broader ecosystem of AI tools, with the goal of democratizing AI to empower
+        people across domains and skill levels. We have also open-sourced Coco, a first instantiation of
+        that vision focused on proactive co-assistance. The initial release carries several limitations
+        that we are actively working to address.
+      </p>
+      <ol class="pain-list">
+        <li>
+          <strong>On-device inference.</strong>
+          While Coco runs fully on the user's computer, the observation component currently makes calls to
+          a vision-language model and may require a cloud provider. We are working with hardware experts
+          to make Coco on-device native.
+        </li>
+        <li>
+          <strong>Personalization and relevance grounding.</strong>
+          Proactive assistance is only valuable when it surfaces the right thing at the right moment.
+          Defining ground truth for what is &ldquo;useful&rdquo; versus &ldquo;noise&rdquo; is inherently
+          subjective. We are developing personalization mechanisms that learn from user feedback without
+          requiring explicit annotation.
+        </li>
+        <li>
+          <strong>Intelligent orchestration.</strong>
+          The current delegation logic is based on parametric knowledge in the language model and does not
+          account for the actual capabilities of available agents or the preferences of a specific user.
+          We are exploring intelligent orchestration approaches.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== Contact ==================== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        We would love to hear your thoughts, feedback, and ideas. Reach out at
+        <a href="mailto:shaoyj@stanford.edu">shaoyj@stanford.edu</a>, or open an issue on the
+        <a href="https://github.com/collaborative-agents/coco" target="_blank" rel="noopener">Coco GitHub repository</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <div class="ack">
+      <div class="ack-title">Acknowledgements</div>
+      We thank Yihan Wang, Haowen Wang, Boom Iamphongsai, Omar Shaikh, Yanzhe Zhang, Caleb Ziems,
+      Song Bian, Huizi Mao, Junxian Guo, Shang Yang, Song Han, and Diyi Yang for their support and
+      feedback at various stages of this post.
+    </div>
+    <div>© 2026 Collaborative Agents · <a href="https://github.com/collaborative-agents/coco" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+
+</body>
+</html>
