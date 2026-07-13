@@ -63,13 +63,10 @@
       </p>
       <p>
         This shift in what machines <em>can do</em> demands a corresponding shift in how we design systems
-        for humans and AI to <em>work together</em>. Over the past few years, models have been trained to
-        better align with human preferences (<a href="https://arxiv.org/abs/2203.02155" target="_blank" rel="noopener">Ouyang et al., 2022</a>)
-        and to sustain coherent multi-turn interactions
-        (<a href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank" rel="noopener">TML interaction models</a>),
-        making collaboration feel meaningfully smoother. Yet this progress, while substantial, leaves the
-        deeper problem untouched. <strong>Efficiency — helping people complete tasks faster — is not the ceiling worth aiming for.
-          The deeper aspiration is growth: helping people achieve what they did not know they could attempt.</strong>
+        for humans and AI to <em>work together</em>. Progress to date has largely benefited those who were 
+        already capable - strong engineers, experienced researchers, and the few who know how to get the 
+        most out of these tools. The deeper aspiration is to extend that leverage to everyone: not just to 
+        make experts faster, but to help more people achieve what they did not know they could attempt.
       </p>
     </div>
   </section>
@@ -90,7 +87,7 @@
             folder. As tasks grow more complex and span multiple tools, the user is left manually bridging
             the context gap: re-explaining background, reconstructing history, and stitching together
             outputs that no single agent ever sees in full
-            (<a href="https://dl.acm.org/doi/full/10.1145/3544548.3581388" target="_blank" rel="noopener">Zamfirescu-Pereira et al., 2023</a>).
+            (<a href="https://arxiv.org/abs/2505.10831" target="_blank" rel="noopener">Shaikh et al., 2025</a>).
         </li>
         <li>
           <strong>Collaboration outcomes depend heavily on the human, not just the agent.</strong>
@@ -100,18 +97,6 @@
             collaboration outperform solo agents in 74% of cases; for those in the bottom 25%, the win
             rate is only 27%
             (<a href="https://arxiv.org/abs/2606.09833" target="_blank" rel="noopener">Shao et al., 2026</a>).
-        </li>
-        <li>
-          <strong>Users are caught between over-delegating and under-delegating.</strong>
-            In practice, people tend to either hand off entire tasks and accept results without
-            verification, or confine agents to line-level operations and continue driving the substantive
-            work themselves
-            (<a href="https://arxiv.org/abs/2604.15597" target="_blank" rel="noopener">Laban et al., 2026</a>).
-            Choosing well requires knowing what each agent can complete reliably, when its outputs need
-            scrutiny, and whether a request is too underspecified to act on
-            (<a href="https://arxiv.org/abs/2401.15356" target="_blank" rel="noopener">Guo et al., 2024</a>)
-            — a calibration that is hard to achieve, especially when collaborating with an agent on a task
-            that is new to them.
         </li>
         <li>
           <strong>Many people simply don't know what AI can help them with.</strong>
@@ -257,15 +242,16 @@
       <ol class="pain-list">
         <li>
           <strong>On-device inference.</strong>
-          While Coco runs fully on the user's computer, the observation component currently makes calls to
-          a vision-language model and may require a cloud provider. We are working with hardware experts
-          to make Coco on-device native.
+          While Coco runs fully on the user's computer, the observation component currently makes calls 
+          to a vision-language model, adding latency, a dependency on network connectivity, and ongoing 
+          API costs. We are working with hardware experts to make Coco on-device native.
         </li>
         <li>
           <strong>Personalization and relevance grounding.</strong>
           Proactive assistance is only valuable when it surfaces the right thing at the right moment.
           Defining ground truth for what is &ldquo;useful&rdquo; versus &ldquo;noise&rdquo; is inherently
-          subjective. We are developing personalization mechanisms that learn from user feedback without
+          subjective (<a href="https://erichorvitz.com/chi99horvitz.pdf" target="_blank" rel="noopener">Horvitz, 1999</a>). 
+          We are developing personalization mechanisms that learn from user feedback without
           requiring explicit annotation.
         </li>
         <li>
