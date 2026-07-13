@@ -24,7 +24,6 @@
          Until then the deep-blue gradient below serves as the backdrop. -->
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-eyebrow">Research Blog · July 2026</div>
       <h1>Collaboration Layer for Democratizing Artificial&nbsp;Intelligence</h1>
       <p class="hero-subtitle">
         The next frontier is not building more agents, but building a collaboration layer between humans and the AI agents they work with.
@@ -264,6 +263,20 @@
     </div>
   </section>
 
+  <!-- ==================== Citation ==================== -->
+  <section id="citation">
+    <div class="container">
+      <h2>Citation</h2>
+      <p>If you find this work useful, please consider citing:</p>
+      <div class="bibtex" id="bibtex-block">@misc{shao2026collaborationlayer,
+  title  = {Collaboration Layer for Democratizing Artificial Intelligence},
+  author = {Shao, Yijia},
+  year   = {2026},
+  url    = {https://collaborative-agents.github.io}
+}<button class="copy-btn" onclick="copyBibtex(this)">Copy</button></div>
+    </div>
+  </section>
+
   <!-- ==================== Contact ==================== -->
   <section id="contact">
     <div class="container">
@@ -287,5 +300,15 @@
     <div>© 2026 Collaborative Agents · <a href="https://github.com/collaborative-agents/coco" target="_blank" rel="noopener">GitHub</a></div>
   </footer>
 
+  <script>
+    function copyBibtex(btn) {
+      const block = document.getElementById('bibtex-block');
+      const text = block.childNodes[0].textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+      });
+    }
+  </script>
 </body>
 </html>

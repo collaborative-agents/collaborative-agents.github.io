@@ -287,6 +287,39 @@ figcaption {
   margin-right: auto;
 }
 
+/* ---------- Citation ---------- */
+.bibtex {
+  position: relative;
+  background: #1f2937;
+  color: #f9fafb;
+  border-radius: 14px;
+  padding: 24px 28px;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-x: auto;
+  white-space: pre;
+  margin: 20px 0;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f9fafb;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.copy-btn:hover { background: rgba(255, 255, 255, 0.2); }
+
 /* ---------- Footer ---------- */
 footer {
   margin-top: 72px;
